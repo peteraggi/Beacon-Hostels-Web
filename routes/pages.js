@@ -10,5 +10,8 @@ router.get("/login", function (req, res) {
 router.get("/register", function (req, res) {
   res.render("pages/register");
 });
+router.get("/dashboard", function (req, res) {
+  res.render("pages/dashboard");
+});
 
 module.exports = router;
