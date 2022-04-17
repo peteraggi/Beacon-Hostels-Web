@@ -2,54 +2,76 @@
 <html lang="en">
     {{>regheader}}
     <body>
-  <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex align-items-center auth px-0">
-                <div class="row w-100 mx-0">
-                    <div class="col-lg-4 mx-auto">
-                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                            <h4>HOSTEL MANAGEMENT SYSTEM</h4>
-                            {{!-- <h6 class="font-weight-light">Please fill out the spaces below.</h6> --}}
-                            <form class="pt-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="First Name"
-                                        placeholder="First Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="Middle Name"
-                                        placeholder="Middle Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="Last Name"
-                                        placeholder="Last Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1"
-                                        placeholder="Username">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-lg"
-                                        id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                                <div class="mb-4">
-                                    <div class="form-check">
-                                        <label class="form-check-label text-muted">
-                                            <input type="checkbox" class="form-check-input">
-                                            I agree to all Terms & Conditions
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                                        href="../dashboard/dashboard.php">Register</a>
-                                </div>
-                                <div class="text-center mt-4 font-weight-light">
-                                    Already have an account? <a href="/login" class="text-primary">Login</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <div class="register-ctr">
+        <div>
+            Create Your Beacon Hostels Account
+            <div class="register-logo-ctr">
+                <img src="" alt="Beacon" style="height: 40px  width 100px" />
             </div>
+        </div>
+        <div></div>
+        <div>Your Beacon Hostel Account will help us track your Bookings</div>
+        <div>
+            <div>
+                <div style="font-Weight: bold margin 5px 0px">
+                    Dear User,
+                </div>
+                <p style="margin: 10px 10px 10px 0px">
+                    We are happy to see you registering with us.
+                </p>
+                <p style="margin: 10px 10px 10px 0px">
+                    We promise to add value to your shopping, most importantly
+
+                </p>
+                <p>
+                    Thanks for the love
+                    <br />
+                    <i style="font-Size: 13.5px color #3F51B5">
+                        Aggi - Beacon Hostels Technician
+                    </i>
+                </p>
+            </div>
+            <div>
+                <form onSubmit="">
+                    <div>We're Happy your here</div>
+                    <div>
+                        <hr />
+                        <span>Welcome</span>
+                        <hr />
+                    </div>
+                    <div>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div class="register-inputs-ctr-divided">
+                        <!-- <label for="uname"><b>phone</b></label> -->
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <!-- <label for="uname"><b>email</b></label> -->
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div class="register-inputs-ctr-half-width">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div class="register-inputs-ctr-divided">
+                        <!-- <label for="uname"><b>Username</b></label> -->
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <!-- <label for="uname"><b>Username</b></label> -->
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div>
+                        <Button>
+                            Create An Account
+                        </Button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
             </body>
 </html>

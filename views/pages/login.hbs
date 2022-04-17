@@ -1,163 +1,50 @@
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
+ 
+ 
+ <div class="login_ctr">
+        <div class="message-ctr">
+            <div>We're Happy Your are here</div>
+            <div>
+                Hi, Beacon Hostels is very proud of you.<br> With your Beacon Hostel account, you can Book
+                a hostel..., fill your account and get Your favourite hostel.....
+            </div>
+            <div>Dont have an account? Create one by clicking below</div>
+            <div>
+                <Button>
+                    Create An Account
+                </Button>
 
-{{!-- <?php include '../head.php'; ?> --}}
-{{>navbar}}
- <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: "Ubuntu", sans-serif;
-        }
-
-        .main {
-            width: 100vw;
-            align-items: center;
-        }
-
-        .main-ctr {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 80%;
-            margin: 0px auto;
-            position: relative;
-        }
-
-        .img-ctr {
-            position: relative;
-        }
-
-        .input-ctr {
-            position: relative;
-            border-bottom: 1px solid #93a3b3;
-            transition: all 0.3s ease-in-out;
-            margin: 10px 0px 35px 0px;
-            width: 300px;
-        }
-
-        .login-hdr {
-            text-align: center;
-        }
-
-        .input-ctr>input {
-            padding: 10px 5px;
-            font-size: 20px;
-            /* width: 300px; */
-            border: none;
-            outline: none;
-        }
-
-        .label {
-            position: absolute;
-            top: 10px;
-            font-size: 20px;
-            pointer-events: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .e-wr {
-            display: none;
-            position: absolute;
-            font-size: 14px;
-            color: red;
-            padding: 5px 0px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .btn-submit {
-            width: 200px;
-            margin-bottom: 10px;
-            padding: 10px 5px;
-            font-size: 18px;
-            border: 0px;
-            outline: none;
-            background-color: #4671ff;
-            color: white;
-            border-radius: 30px;
-            box-shadow: 5px 5px 7px #e2e2e2;
-            cursor: pointer;
-            /* transition: all 0.3s ease-in-out; */
-            transform: translateY(-1px);
-        }
-
-        .btn-submit:hover {
-            opacity: 0.7;
-        }
-
-        @media only screen and (max-width: 400px) {
-            .main-ctr {
-                display: flex;
-                flex-direction: column;
-
-            }
-        }
-    </style>
-    <script>
-        let data = sessionStorage.getItem("user");
-        if (data) {
-            window.location.replace("/");
-        }
-    </script>
-
-</head>
-
-<body>
-    <div class="main">
-        <div class="main-ctr">
-            {{!-- <div class="img-ctr">
-                <img src="images/beaco.jpg" alt="" style="width: 60vw; height: 60vh; object-fit: contain" />
-            </div> --}}
-            <form class="login-ctr" autocomplete="off">
-                <div class="login-hdr">
-                    <i class="fas fa-user-circle fa-10x" style="color: #4671ff"></i>
-                    <h1>Welcome</h1>
+            </div>
+        </div>
+        <div class="lg_form_ctr">
+            <form href="" class="login_form">
+                <div class="login-logo-ctr">
+                    <img src="" alt="Beaconhostels" />
                 </div>
-                <div class="ctr-username input-ctr">
-                    <i class="fas fa-user"></i>
-                    <span class="label" id="lb-username">Username</span>
-                    <input type="text" id="lg-username" />
-                    <div class="e-wr">Check Username or Password</div>
-                </div>
-                <div class="ctr-password input-ctr">
-                    <i class="fas fa-lock"></i>
-                    <span class="label" id="lb-password">Password</span>
-                    <input type="text" id="lg-password" />
-                    <div class="e-wr">Check Username or Password</div>
-                </div>
-                <div class="btn-ctr">
-                    <button type="submit" class="btn-submit">Login</button>
-                </div>
-                  {{!-- <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="/product">SIGN IN</a>
-                </div>
-                <div class="my-2 d-flex justify-content-between align-items-center">
-                  <div class="form-check">
-                    <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input">
-                      Keep me signed in
+                <h3>Welcome, Sign in here</h3>
+                <div class="login-inputs-ctr">
+
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button><br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
-                  </div>
-                  <a href="#" class="auth-link text-black">Forgot password?</a>
-                </div> --}}
-                 <div class="text-center mt-4 font-weight-light">
-                  Don't have an account? <a href="/register" class="text-primary">Register</a>
+
+                </div>
+                <div style="width: 100%; margin-Block: 10px;">
+                    Not Registered?
+                    <span style="text-Decoration: underline color blue , margin-Left 5px">
+                        <a href="/register">Register Here</a>
+                    </span>
+                    </Link>
                 </div>
             </form>
-
         </div>
     </div>
-    {{>footer}}
-    {{>script}}
-
-   </body>
-
-</html>
-
+    </html>

@@ -1,0 +1,95 @@
+.login_ctr {
+  width: 70%;
+  margin: 25px auto;
+  display: flex;
+}
+.message-ctr {
+  flex: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.message-ctr > div:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.message-ctr > div {
+  margin: 10px 30px 10px 0px;
+}
+.lg_form_ctr {
+  flex: 1;
+}
+.form_ctr {
+  height: 75%;
+}
+.login_form {
+  height: 90%;
+  width: 80%;
+  margin: 5% auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-inputs-ctr {
+  flex: 2;
+}
+.login-btn-ctr {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.login-logo-ctr {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-logo-ctr > img {
+  height: 75%;
+  width: 75%;
+  object-fit: contain;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1024px) {
+  .login_ctr {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login_ctr {
+    flex-direction: column-reverse;
+  }
+  .login-logo-ctr {
+    display: none;
+  }
+  .message-ctr {
+    border-right: none;
+    margin: 20px 10%;
+  }
+}
